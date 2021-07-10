@@ -1,9 +1,10 @@
 import './App.css';
+import Nearby from './components/Explore Nearby/Nearby';
 
 function App() {
   return (
-    <div>
-      Hello World
+    <div className="App">
+      <Nearby />
     </div>
   );
 }
