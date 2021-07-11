@@ -53,7 +53,7 @@ const ExploreNearbyDiv = styled.div`
     margin-top:2rem;
     margin-left:5%;
 
-    h2{
+    h1{
         margin:0;
     }
 `
@@ -69,7 +69,7 @@ const Nearby = () => {
     const [nearbyChoice, setNearbyChoice] = useState(mockData)
     return(
         <ExploreNearbyDiv>
-            <h2>Explore nearyby</h2>
+            <h1>Explore nearyby</h1>
             <ContainerDiv>
                 {nearbyChoice.map(choice =><NearbyChoice 
                 key={nearbyChoice.indexOf(choice)}choice={choice}/>)} 

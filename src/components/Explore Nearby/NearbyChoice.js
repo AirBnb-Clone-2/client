@@ -6,7 +6,6 @@ const ChoiceA = styled.a`
     display:flex;
     width: 21%;
     margin-top:1.5rem;
-    text-decoration: none;
 
 
     img{
@@ -16,7 +15,6 @@ const ChoiceA = styled.a`
         margin:auto 0rem
     }
     div{
-        color: #171010;
         margin:auto 1rem;
         text-align:left;
         line-height: 1.4;
@@ -30,7 +28,7 @@ const ChoiceA = styled.a`
 const NearbyChoice = props => {
     const {choice} = props
     return(
-        <ChoiceA href="#">
+        <ChoiceA href="https://www.youtube.com">
             <img src={choice.picture} alt={`picture of ${choice.state}`}/>
             <div>
                 <h4>{choice.state}</h4>
