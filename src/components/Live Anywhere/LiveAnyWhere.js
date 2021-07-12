@@ -30,7 +30,7 @@ const Bottom = styled.div`
     height: 32rem;
     border-radius:20px;
     background-image: url("imgs/LiveAnyWhere/bottom.jpg");
-    background-position:bottom;
+    background-position:top;
     background-size:cover;
     margin: 3rem 0rem;
     display:flex;
@@ -43,6 +43,25 @@ const Bottom = styled.div`
         display:flex;
         flex-direction:column;
         align-self:center;
+
+        h1{
+            font-size:2.9rem;
+            z-index:10;
+            margin:0;
+        }
+        h3{
+            margin-bottom:4rem;
+        }
+
+        a{
+            display:flex;
+            padding:1rem;
+            background-color:black;
+            width:6.5rem;
+            color:white;
+           justify-content:center;
+           border-radius:10px;
+        }
 
     }
 `
@@ -72,8 +91,8 @@ const LiveAnyWhere = () => {
             <Bottom>
                 <div>
                     <h1>The Greatest<br></br>Outdoors</h1>
-                    <h4>Wishlists curated by Airbnb.</h4>
-                    <a>Get inspired</a>
+                    <h3>Wishlists curated by Airbnb.</h3>
+                    <a href="https://www.youtube.com">Get inspired</a>
                 </div>
             </Bottom>
         </LiveAnyWhereDiv>
