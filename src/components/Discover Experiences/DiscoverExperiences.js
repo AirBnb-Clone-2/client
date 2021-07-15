@@ -11,7 +11,7 @@ const ExperiencesDiv = styled.div`
     span{
         font-size:1.6rem;
     }
-    margin-bottom:5rem;
+    margin-bottom:3rem;
 `
 const H1 = styled.h1`
     margin:0;
