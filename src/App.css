@@ -6,3 +6,12 @@ a{
   color: #171010;
   text-decoration: none;
 }
+
+.tab{
+  padding-bottom: 0.5rem;
+ 
+}
+.choosenOne{
+  border: 2px solid black;
+  border-style: none none solid none;
+}
