@@ -3,6 +3,12 @@ import styled from "styled-components";
 import Tab from "./Tab";
 import Choice from "./Choice";
 
+const Container = styled.div`
+    width:100%;
+    hr{
+        margin-bottom:0rem;
+    }
+`
 const FutrueGetawaysDiv = styled.div`
     display:flex;
     flex-direction:column;
@@ -1766,30 +1772,33 @@ const FutrueGetaways = () => {
     }
 
     return (
-        <FutrueGetawaysDiv>
-            <h1>Inspiration for future getaways</h1>
-            <Header>
-                <Nav>
+        <Container>
+            <FutrueGetawaysDiv>
+                <h1>Inspiration for future getaways</h1>
+                <Header>
+                    <Nav>
+                        {
+                            theTabs.map(tab => {
+                                const theIndex = theTabs.indexOf(tab)
+                                return <Tab
+                                    key={theIndex}
+                                    i={theIndex}
+                                    index={index}
+                                    chooseOne={chooseOne} name={tab.tabName} />
+                            })}
+                    </Nav>
+                </Header>
+                <HR></HR>
+                <Choices>
                     {
-                        theTabs.map(tab => {
-                            const theIndex = theTabs.indexOf(tab)
-                            return <Tab
-                                key={theIndex}
-                                i={theIndex}
-                                index={index}
-                                chooseOne={chooseOne} name={tab.tabName} />
-                        })}
-                </Nav>
-            </Header>
-            <HR></HR>
-            <Choices>
-                {
-                    tabs[index] && tabs[index].choices.map(choice =>
-                        <Choice key={tabs[index].choices.indexOf(choice)} info={choice} />)
-                }
-            </Choices>
+                        tabs[index] && tabs[index].choices.map(choice =>
+                            <Choice key={tabs[index].choices.indexOf(choice)} info={choice} />)
+                    }
+                </Choices>
 
-        </FutrueGetawaysDiv>
+            </FutrueGetawaysDiv>
+            <HR></HR>
+        </Container>
     )
 }
 
