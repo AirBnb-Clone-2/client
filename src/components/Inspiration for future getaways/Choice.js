@@ -5,6 +5,13 @@ const A = styled.a`
     display:flex;
     width:25%;
     line-height:1.25;
+    font-size:0.9rem;
+`
+const Span1 = styled.span`
+    color:#222222;
+`
+const Span2 = styled.span`
+    color:#808080;
 `
 
 const Choice = (props) => {
@@ -14,9 +21,9 @@ const Choice = (props) => {
         <A onClick={(e)=>{e.preventDefault(); 
         alert(`${place} isn't available at the moment`)}} href="">
             <p>
-                {place}
+                <Span1>{place}</Span1>
                 <br/>
-                {area}
+                <Span2>{area}</Span2>
             </p>
             
              

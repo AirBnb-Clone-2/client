@@ -30,8 +30,8 @@ const Container = styled.a`
     width:33%;
 
     img{
-        width:26.5rem;
-        height:26.5rem;
+        width:25.8rem;
+        height:25.8rem;
         border-radius:10px;
     }
     h3{
