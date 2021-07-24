@@ -20,11 +20,13 @@ const Header = styled.header`
     width:90%;
     height:6vh;
     align-items:center;
+    margin-bottom:0rem;
 `
 const Nav = styled.nav`
     display:flex;
     width:60rem;
     justify-content:space-between;
+    margin-bottom:-0.4rem;
     
     a{
         display:flex;
@@ -37,18 +39,12 @@ const Nav = styled.nav`
         }
     }
 `
-const HR = styled.hr`
-    margin-top:-0.25rem;
-    width:100%;
-    color:silver;
-    margin-bottom:1rem;
-    border-style: none none solid none;
-    height:1px;
-`
 const Choices = styled.div`
     display:flex;
     flex-wrap:wrap;
     padding-bottom:4rem;
+    border:1px #dddddd;
+    border-style: solid none none none;
 `
 const tabs = [
     {
@@ -1763,10 +1759,6 @@ const FutrueGetaways = () => {
     const [theTabs] = useState(tabs)
     const [index, setIndex] = useState(0);
 
-    // useEffect(() => {
-    //     console.log("!")
-    // },[index])
-
     const chooseOne = index => {
         setIndex(index)
     }
@@ -1788,7 +1780,6 @@ const FutrueGetaways = () => {
                             })}
                     </Nav>
                 </Header>
-                <HR></HR>
                 <Choices>
                     {
                         tabs[index] && tabs[index].choices.map(choice =>
@@ -1797,7 +1788,6 @@ const FutrueGetaways = () => {
                 </Choices>
 
             </FutrueGetawaysDiv>
-            <HR></HR>
         </Container>
     )
 }
