@@ -12,30 +12,32 @@ const Container = styled.div`
 const FutrueGetawaysDiv = styled.div`
     display:flex;
     flex-direction:column;
-    margin-left:5%;
-    width:90%;
+    margin-left:6%;
+    width:87%;
 `
 const Header = styled.header`
     display:flex;
     width:90%;
-    height:6vh;
+    height:5vh;
+    margin-left:-1%;
     align-items:center;
     margin-bottom:0rem;
 `
 const Nav = styled.nav`
     display:flex;
-    width:60rem;
+    width:58rem;
+    height:100%;
     justify-content:space-between;
-    margin-bottom:-0.4rem;
     
     a{
         display:flex;
-        padding:0.45rem;
-        color:#536162;
+        padding:1vh;
+        color:#717171;
+        font-size:0.9rem;
+        font-weight:450;
         border-radius:5px;
         &:hover{
             background-color:rgb(247 247 247);
-            
         }
     }
 `

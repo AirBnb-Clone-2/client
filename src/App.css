@@ -1,5 +1,10 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   color: #171010;
+  display:flex;
+  flex-direction: column;
 }
 
 a{
@@ -8,12 +13,13 @@ a{
 }
 
 .tab{
-  padding-bottom: 0.5rem;
- 
+  padding-bottom: 0.1rem;
 }
 .choosenOne{
-  border: 2px solid black;
-  border-style: none none solid none;
+  border-bottom: 2px solid black;
+}
+.choosenOne a{
+  color:black;
 }
 
 .global{

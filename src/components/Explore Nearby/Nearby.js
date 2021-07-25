@@ -51,7 +51,9 @@ const ExploreNearbyDiv = styled.div`
     height: 30vh;
     text-align:left;
     margin-top:2rem;
-    margin-left:5%;
+    margin-left:6%;
+    margin-bottom:2rem;
+    width:87%;
 
     h1{
         margin:0;

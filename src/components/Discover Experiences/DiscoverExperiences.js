@@ -4,9 +4,9 @@ import styled from "styled-components";
 const ExperiencesDiv = styled.div`
     display:flex;
     margin-top:1rem;
-    margin-left:5%;
+    margin-left:6%;
     flex-direction:column;
-    width:90%;
+    width:87%;
 
     span{
         font-size:1.6rem;
@@ -27,11 +27,10 @@ const Top = styled.div`
 `
 
 const Container = styled.a`
-    width:33%;
-
+    width:32.5%;
     img{
-        width:25.8rem;
-        height:25.8rem;
+        width:28.15vw;
+        height:28.15vw;
         border-radius:10px;
     }
     h3{
